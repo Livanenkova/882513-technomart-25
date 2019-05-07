@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Arina Livanenkova](https://up.htmlacademy.ru/htmlcss/25/user/882513).
-* Наставник: `Неизвестно`.
+* Наставник: [Анатолий Пазюк](https://htmlacademy.ru/profile/id380487).
 
 ---
 
