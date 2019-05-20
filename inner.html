@@ -74,29 +74,55 @@
             <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
         <h1>Перфораторы</h1>
-        <!-- Фильтр цена -->
-        <div class="catalog">
+        <div class="catalog-columns">
           <div class="filter">
             <h2> Фильтр</h2>
-            <!-- Фильтр цена -->
-          <div class="firm">
-            <h2> Производители:</h2>
-            <ul class="filter-firm">
-              <li> BOSCH</li>
-              <li> ИНТЕРСКОЛ</li>
-              <li> MAKITA</li>
-              <li> DEWALT</li>
-              <li>HITACHI</li>
-            </ul>
-            <!-- Фильтры производители -->
+            <form action="#" method="get" class="filter-form">
+              <fieldset class="filter-prise">
+                <legend>Цена:</legend>
+              </fieldset>
+          <div class="brand">
+              <fieldset class="filter-brand">
+                <legend>Производители:</legend>
+                <ul class="filter-brands">
+                  <li class="filter-option">
+                    <input type="checkbox" name="Bosh"id="filter-bosch" checked class="filter-option">
+                    <label for="filter-bosch">BOSCH</label>
+                  </li>
+                  <li class="filter-option">
+                  <input type="checkbox" name="filter-interskol" id="interskol">
+                  <label for="filter-interskol">INTERSKOL</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" name="Makita" id="filter-makita">
+                    <label for="filter-makita">MAKITA</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" name="Dewalt" id="filter-dewalt">
+                    <label for="filter-dewalt">DEWALT</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" name="HITACHI" id="filter-hitachi">
+                    <label for="filter-hitachi">HITACHI</label>
+                  </li>
+                </ul>
+              </fieldset>
+
           </div>
-          <div class="filter-power">
-            <ul class="filter-power">
-            <li> АККУМУЛЯТОРНЫЕ</li>
-            <li>Сетевые</li>
-            <!-- Фильтры питания -->
-            </ul>
-          </div>
+            <fieldset class="filter=power">
+              <legend>Питание</legend>
+              <ul class="filter-power">
+                <li class="filter-option">
+                  <input type="radio" id="filter-battery">
+                  <label for="filter-battery">Аккумуляторные</label>
+                </li>
+                <li class="filter-option">
+                  <input  type="radio" id="filter-socket">
+                 <label for="filter-socket"> Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
           </div>
         </div>
       </div>
