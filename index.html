@@ -1,78 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
     <title>HTML Academy: Техномарт</title>
-  </head>
-    <body>
-      <header>
-        <div class="top-header">
-          <div class="top-header-container">
-            <a class="header-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" width="108" height="18" viewBox="0 0 108 18">
-                <defs>
-                  <style>
-                   .cls-1 {
-                    fill: #ffff;
-                    fill-rule: evenodd;
-                    }
-                  </style>
-                </defs>
-                <path id="ТЕХНОМАРТ" class="cls-1" d="M185.421,15.306H189.2V31.055h2.128V15.306h3.783v-1.75h-9.694v1.75Zm13.827,7.5h5.2v-1.75h-5.2v-5.75h5.911v-1.75H197.12v17.5h8.039v-1.75h-5.911v-6.5Zm12.713-2.25-2.6-7h-2.128l3.192,8.5-3.547,9h2.128l2.955-7.5,2.956,7.5h2.128l-3.547-9,3.192-8.5h-2.128Zm14.241-7v7.749h-4.965V13.556h-2.128v17.5h2.128v-8H226.2v8h2.128v-17.5H226.2Zm7.673,0.175a3.776,3.776,0,0,0-1.6,1.45,7.924,7.924,0,0,0-1,2.762,23.065,23.065,0,0,0-.343,4.362,23.061,23.061,0,0,0,.343,4.362,7.917,7.917,0,0,0,1,2.762,3.772,3.772,0,0,0,1.6,1.45,5.6,5.6,0,0,0,4.279,0,3.772,3.772,0,0,0,1.6-1.45,7.957,7.957,0,0,0,1-2.762,23.144,23.144,0,0,0,.343-4.362,23.149,23.149,0,0,0-.343-4.362,7.964,7.964,0,0,0-1-2.762,3.776,3.776,0,0,0-1.6-1.45A5.6,5.6,0,0,0,233.875,13.732ZM234.9,29.48a2.61,2.61,0,0,1-.946-1.175,9.121,9.121,0,0,1-.65-2.3,22.666,22.666,0,0,1-.248-3.7,22.67,22.67,0,0,1,.248-3.7,9.126,9.126,0,0,1,.65-2.3,2.614,2.614,0,0,1,.946-1.175,2.064,2.064,0,0,1,2.223,0,2.627,2.627,0,0,1,.946,1.175,9.168,9.168,0,0,1,.65,2.3,22.67,22.67,0,0,1,.248,3.7,22.666,22.666,0,0,1-.248,3.7,9.164,9.164,0,0,1-.65,2.3,2.623,2.623,0,0,1-.946,1.175A2.064,2.064,0,0,1,234.9,29.48Zm16.866-.675L255.2,18.056h0.118l0.71,13h2.128l-0.946-17.5h-2.6l-3.854,12h-0.095l-3.854-12h-2.6l-0.945,17.5h2.128l0.709-13h0.118l3.429,10.749h2.128Zm16.252-2.25,1.064,4.5h2.128l-4.019-17.5H264.12l-4.019,17.5h2.128l1.064-4.5h4.728Zm-0.354-1.75h-4.02l1.963-8.75H265.7Zm7.783-.625V14.931h1.655a4.037,4.037,0,0,1,1.384.212,2.02,2.02,0,0,1,.957.738A3.628,3.628,0,0,1,280,17.306a11.945,11.945,0,0,1,.177,2.25,11.944,11.944,0,0,1-.177,2.25,3.628,3.628,0,0,1-.556,1.425,2.016,2.016,0,0,1-.957.737,4.023,4.023,0,0,1-1.384.213H275.45Zm0,1.5a10.754,10.754,0,0,0,1.135.175,11.424,11.424,0,0,0,1.23.075,5.725,5.725,0,0,0,2-.313,3.053,3.053,0,0,0,1.4-1.05,5.056,5.056,0,0,0,.827-1.962,14.393,14.393,0,0,0,.272-3.05,13.128,13.128,0,0,0-.284-2.975,4.544,4.544,0,0,0-.9-1.925,3.389,3.389,0,0,0-1.608-1.037,8.115,8.115,0,0,0-2.412-.312,16.124,16.124,0,0,0-1.974.113,10.644,10.644,0,0,0-1.809.387V31.055h2.128V25.681Zm8.25-10.375h3.783V31.055h2.128V15.306h3.783v-1.75H283.7v1.75Z" transform="translate(-185.406 -13.313)"/>
-               </svg>
-            </a>
-            <a class= "bookmarks" href="#">Закладки:</a>
-            <a class="basket" href="#">Корзина</a>
-            <a class="button-order"  href="#"> Оформить заказ</a>
-          </div>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top-header-layout">
+            <div class="top-header container">
+                <a class="header-logo">
+                    <img src="img/header-logo.png" width="110" height="18" alt="Логотип «Техномарт»" title="Техномарт">
+                </a>
+                <form class="search-form" action="#" method="get">
+                    <input class="search-area-field" type="search" id="search" name="search" placeholder="Поиск:">
+                    <label class="search-area-label" for="search" aria-label="Поиск на сайте">
+                        <svg class="search-icon" enable-background="new 0 0 17 17" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m17 15.586-3.542-3.542c.963-1.262 1.542-2.834 1.542-4.544 0-4.142-3.357-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5 0 4.143 3.358 7.5 7.5 7.5 1.71 0 3.282-.579 4.544-1.542l3.542 3.542zm-15-8.086c0-3.033 2.467-5.5 5.5-5.5 3.032 0 5.5 2.467 5.5 5.5 0 3.032-2.468 5.5-5.5 5.5-3.033 0-5.5-2.468-5.5-5.5z" fill="#ffffff"/></svg>
+                    </label>
+                </form>
+
+                <a class="bookmarks" href="#">Закладки: 0</a>
+                <a class="cart" href="#">Корзина: 0</a>
+                <a class="order-button" href="#">Оформить заказ</a>
+            </div>
         </div>
-        <div class="main-header">
-          <div class="main-header-left">
-            <p>
-              Интернет-магазин
-              cтроительных материалов
-              и инструментов для ремонта
-            </p>
+        <div class="main-header-layout">
+            <div class="container">
+                <div class="main-header">
+                    <div class="main-header-left">
+                        <p class="main-title">
+                            Интернет-магазин
+                            строительных материалов
+                            и инструментов для ремонта
+                        </p>
+                    </div>
+                    <div class="main-header-center">
+                        <p class="tel-number">+7 (812) 555-05-55</p>
+                        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    </div>
+                    <div class="main-header-right">
+                        <ul>
+                            <li class="login-link">
+                                <a class=button href="#">Войти</a>
+                            </li>
+                            <li class="registration-link">
+                                <a class="button" href="#">Регистрация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
           </div>
-          <div class="main-header-center">
-            <p class="phone-number">+7 (812) 555-05-55</p>
-            <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
-          <div class="main-header-right">
-            <ul>
-              <li class="login">
-                <a href="#">Войти</a>
-              </li>
-              <li class="registration" >
-                <a href="#">Регистрация</a>
-              </li>
-            </ul>
-          </div>
-      <nav class="main-header-navigation">
-        <ul class="header-navigation">
-          <li class="header-navigation-item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="header-navigation-item">
-            <a href="#">Компания</a>
-          </li>
-          <li class="header-navigation-item">
-            <a href="inner.html">Каталог</a>
-          </li>
-          <li class="header-navigation-item">
-            <a href="#">Новости</a>
-           </li>
-          <li class="header-navigation-item">
-            <a href="#">Спецпредложения</a>
-          </li>
-          <li class="header-navigation-item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="header-navigation-item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+                <nav class="main-navigation">
+                    <ul class="site-navigation">
+                    <li class="site-navigation-item"><a href="index.html">Главная</a></li>
+                    <li class="site-navigation-item"><a href="#">Компания</a></li>
+                    <li class="site-navigation-item"><a href="#">Каталог</a></li>
+                    <li class="site-navigation-item"><a href="#">Новости</a></li>
+                    <li class="site-navigation-item"><a href="#">Спецпредложения</a></li>
+                    <li class="site-navigation-item"><a href="#">Доставка</a></li>
+                    <li class="site-navigation-item"><a href="#">Контакты</a></li>
     </div>
   </header>
     <main>
@@ -103,82 +94,97 @@
         </div>
       </div>
     </main>
-   <footer>
-    <div class="main-footer-layout">
-      <div class="main-footer container">
-        <div class="main-footer-left">
-          <a class="footer-logo">
-            <img src="img/footer-logo.png" alt="Логотип интернет-магазина Техномарт" title="Техномарт">
-          </a>
-          <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            +7 (812) 555-05-55
-          </p>
-      </div>
-      <div class="main-footer-right">
-        <ul class="site-sections">
-          <li><a href=#>Компания</a></li>
-          <li><a href=#>Новости</a></li>
-          <li><a href=#>Каталог</a></li>
-          <li><a href=#>Доставка</a></li>
-          <li><a href=#>Контакты</a></li>
-        </ul>
-        <ul class="product-categories">
-          <li><a href=#>Материалы</a></li>
-          <li><a href=#>Техника</a></li>
-          <li><a href=#>Инструмент</a></li>
-          <li><a href=#>Спецпредложения</a></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-    <div class="bottom-footer-layout">
-      <div class="bottom-footer container">
-        <div class="bottom-footer-left">
-          <p>
-            © 2010–2017 Компания «Техномарт»<br>
-            Все права защищены
-          </p>
-      </div>
-      <div class="bottom-footer-center">
-        <ul class="web-contacts-items">
-          <li class="web-contacts-button">
-            <a class="contacts-vk" aria-label="Техномарт Вконтакте" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
-                <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="web-contacts-button">
-            <a class="contacts-fb" aria-label="Техномарт в Фейсбук" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
-              </svg>
-           </a>
-          </li>
-          <li class="web-contacts-button">
-            <a class="scontacts-inst" aria-label="Техномарт в Инстаграм" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="bottom-footer-right">
-        <p>
-          Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
-          </a>
-        </p>
-        <p>
-          Разработано
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
-      </div>
-     </div>
-   </div>
-  </footer>
+     <footer>
+        <div class="main-footer-layout">
+            <div class="main-footer container">
+                <div class="main-footer-left">
+                    <a class="footer-logo">
+                        <img src="img/footer-logo.png" width="220" height="68" alt="Логотип «Техномарт»" title="Техномарт">
+                    </a>
+                    <p>
+                        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                        +7 (812) 555-05-55
+                    </p>
+                </div>
+                <div class="main-footer-right">
+                    <ul class="site-sections">
+                        <li><a href=#>Компания</a></li>
+                        <li><a href=#>Новости</a></li>
+                        <li><a href=catalog.html>Каталог</a></li>
+                        <li><a href=#>Доставка</a></li>
+                        <li><a href=#>Контакты</a></li>
+                    </ul>
+                    <ul class="product-categories">
+                        <li><a href=#>Материалы</a></li>
+                        <li><a href=#>Техника</a></li>
+                        <li><a href=#>Инструмент</a></li>
+                        <li><a href=#>Спецпредложения</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer-layout">
+            <div class="bottom-footer container">
+                <div class="bottom-footer-left">
+                    <p>
+                        © 2010–2017 Компания «Техномарт»<br>
+                        Все права защищены
+                    </p>
+                </div>
+                <div class="bottom-footer-center">
+                    <ul class="social-items">
+                        <li class="social-button">
+                            <a class="social-vk" aria-label="Техномарт Вконтакте" href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                   width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+                                     <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+                                  c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+                                  c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+                                  c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+                                  c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+                                  c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+                                  s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+                                  C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+                                  s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+                                  c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-button">
+                            <a class="social-fb" aria-label="Техномарт в Фейсбук" href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                   width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+                                     <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-button">
+                            <a class="social-ig" aria-label="Техномарт в Инстаграм" href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                   width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+                                     <path fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
+                                  c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
+                                  c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-footer-right">
+                    <p>
+                        <span>Обратная связь:</span>
+                        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </p>
+                    <p>
+                        <span>Разработано —</span>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss">
+                            htmlacademy.ru
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
   <section class="modal-feedback">
     <button class="close-feedback">
     </button>
@@ -209,6 +215,7 @@
     </form>
     </div>
   </section>
+
   <section class="modal-map">
   <button class="close-map" aria-label="Закрыть">
   </button>
