@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 a {
   text-decoration: none;
@@ -18,13 +19,9 @@ input[type="radio"].visually-hidden {
   height: 1px;
   margin: -1px;
   border: 0;
-  padding: 0;
-
+  padding:
   white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
+   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -171,9 +168,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   padding-top: 46px;
@@ -254,16 +248,21 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-right ul {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .login-link .button {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   padding: 12px;
   padding-right: 26px;
   padding-bottom: 12px;
   padding-left: 48px;
+  box-sizing: border-box;
 }
 
 .login-link .button::before {
@@ -292,12 +291,14 @@ input[type="radio"].visually-hidden {
 }
 
 .registration-link .button {
+  display: inline-block;
+  vertical-align: middle;
   min-width: 150px;
   padding-top: 12px;
   padding-right: 25px;
   padding-bottom: 12px;
   padding-left: 24px;
-
+  box-sizing: border-box;
 }
 
 .main-header-right a {
@@ -321,11 +322,18 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .site-navigation-item a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 19px 33px;
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
@@ -345,6 +353,11 @@ input[type="radio"].visually-hidden {
 }
 
 .user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   min-width: 300px;
   margin: 0;
@@ -354,13 +367,13 @@ input[type="radio"].visually-hidden {
 }
 
 .user-profile .user-name {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 12px;
-    padding-right: 6px;
-    padding-bottom: 12px;
-    padding-left: 32px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 12px;
+  padding-right: 6px;
+  padding-bottom: 12px;
+  padding-left: 32px;
 }
 
 .user-profile .user-name::before {
@@ -438,7 +451,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-profile-menu a:hover {
-    color: #ee3643;
+  color: #ee3643;
 }
 
 .user-profile-menu a:active {
@@ -455,12 +468,6 @@ input[type="radio"].visually-hidden {
  display: none
 }
 
-.modal-basket{
- display: none
-}
-
-
-
 /*футер*/
 
 .main-footer-layout {
@@ -469,7 +476,14 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-background-color: #32425c;
+  display: flex;
+  justify-content: space-between;
+  background-color: #32425c;
+}
+.main-footer-left {
+  display: flex;
+ flex-direction: column;
+ color: #f1f5f7;
 }
 
 .footer-logo {
@@ -477,22 +491,31 @@ background-color: #32425c;
 }
 
 .main-footer-left p {
- color: #f1f5f7;
+  padding-left: 3px;
+  margin-bottom: 49px
+  color: #f1f5f7;
   font-size: 18px;
   line-height: 24px;
 }
 
+.main-footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .main-footer-right ul {
-    list-style: none;
+  list-style: none;
 }
 
 .site-sections {
-    width: 550px;
-    margin: 0;
-    padding: 0;
-    margin-top: 39px;
-    margin-bottom : 34px;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  margin-top: 39px;
+  margin-bottom : 34px;
 }
 
 .site-sections a {
@@ -510,6 +533,12 @@ background-color: #32425c;
 }
 
 .product-categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
     margin: 0;
     padding: 0;
 }
@@ -529,38 +558,67 @@ background-color: #32425c;
 }
 
 .bottom-footer-layout {
-  width: 100%;
-  background-color: #293449;
+    width: 100%;
+
+    background-color: #293449;
 }
 
 .bottom-footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #293449;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #293449;
 }
 
 .bottom-footer-left {
-  margin-right: 40px;
+    margin-right: 40px;
 }
 
 .bottom-footer-left p {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 18px;
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .bottom-footer-center ul {
-  list-style: none;
+    list-style: none;
 }
 
 .social-items {
-  margin: 0;
-  padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.social-button {
+    margin-left: 5px;
 }
 
 .social-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 41px;
   height: 41px;
   background-color: #212a3a;
@@ -573,23 +631,33 @@ background-color: #32425c;
 }
 
 .bottom-footer-right {
+  display: flex;
   padding-right: 15px;
   font-size: 16px;
   line-height: 18px;
 }
 
+.bottom-footer-right p {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-footer-right p:first-child {
+  margin-right: 51px;
+}
+
 .bottom-footer-right span {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .bottom-footer-right a {
-    color: #ffd180;
+  color: #ffd180;
 }
 
 .bottom-footer-right a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .bottom-footer-right a:active {
-    color: #ee3643;
+  color: #ee3643;
 }
