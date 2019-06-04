@@ -19,6 +19,7 @@ input[type="radio"].visually-hidden {
   margin: -1px;
   border: 0;
   padding:
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -67,6 +68,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 250px;
   height: 42px;
+  margin-right: auto;
 }
 
 .search-area-label {
@@ -118,7 +120,7 @@ input[type="radio"].visually-hidden {
 .bookmarks {
   position: relative;
   min-width: 150px;
-  padding: 13px 24px 11px 64px;
+  padding: 12px 25px 13px 44px;
   box-sizing: border-box;
 }
 
@@ -192,7 +194,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 46px;
+  padding-top: 47px;
   margin-bottom: 39px;
   background-color: #f4f7f9;
 }
@@ -323,6 +325,14 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
+.registration-link:hover .button::before {
+    opacity: 1;
+}
+
+.registration-link:active .button::before {
+    opacity: 0.3;
+}
+
 .main-header-right a {
   color: #000000;
   font-size: 21px;
@@ -349,13 +359,14 @@ input[type="radio"].visually-hidden {
   align-items: center;
   list-style: none;
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .site-navigation-item a {
   display: inline-block;
   vertical-align: middle;
-  padding: 19px 33px;
+  padding: 19px 30px;
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
@@ -987,11 +998,11 @@ input[type="radio"].visually-hidden {
 
 /*модальные окна*/
 
-/*.modal {
+.modal {
   position: fixed;
   z-index: 3;
   background-color: #ffffff;
-}*/
+}
 
 .modal-container {
   width: 460px;
@@ -999,19 +1010,19 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-  display: none;
+/*  display: none;*/
   width: 620px;
   height: 430px;
-  margin-left: -310px;
-  margin-top: -215px;
   top: 50%;
   left: 50%;
   box-shadow: 0 0 20px 0 rgba(47, 42, 43, 0.5),
   inset 0 5px 0 0 #ff5357;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .close-feedback {
-  position: absolute;
+  position: fixed;
   top: 16px;
   right: 9px;
   margin: 0;
@@ -1020,6 +1031,64 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.modal-feedback h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback .user-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+  margin-bottom: 19px;
+}
+
+.user-info label {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-user-name span {
+  margin-bottom: 9px;
+}
+
+.feedback-user-email input {
+  padding: 10px 16px;
+  width: 220px;
+  box-sizing: border-box;
+}
+
+.feedback-user-email span {
+    margin-bottom: 9px;
+}
+
+.message-text span {
+    margin-bottom: 9px;
+}
+
+.feedback-message label {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-message-text textarea {
+    padding: 10px 16px;
+    margin-bottom: 31px;
+}
+
+.feedback-bottom {
+  min-height: 112px;
+  background-color: #f4f4f4;
+}
+.submit-button {
+  width: 100%;
+  margin: 37px 0;
+  padding: 12px 0;
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+  border-radius: 3px;
+}
 
 
 
