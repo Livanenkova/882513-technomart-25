@@ -998,10 +998,11 @@ input[type="radio"].visually-hidden {
 
 /*модальные окна*/
 
-.modal {
-  position: fixed;
+/*.modal {
+  display: none;
   z-index: 3;
   background-color: #ffffff;
+  display: none;
 }
 
 .modal-container {
@@ -1010,7 +1011,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-/*  display: none;*/
+  display: none;
   width: 620px;
   height: 430px;
   top: 50%;
@@ -1022,7 +1023,7 @@ input[type="radio"].visually-hidden {
 }
 
 .close-feedback {
-  position: fixed;
+  position: absolute;
   top: 16px;
   right: 9px;
   margin: 0;
@@ -1089,14 +1090,17 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 3px;
 }
-
-
+*/
 
 .modal-map {
-  display: none
+  display: none;
 }
 
 .modal-basket
 {
- display: none
+ display: none;
+}
+
+.modal-feedback{
+  display: none;
 }
