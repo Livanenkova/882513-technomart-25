@@ -1343,6 +1343,7 @@ input[type="radio"].visually-hidden {
   inset 0 5px 0 0 #ff5357;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .close-feedback {
