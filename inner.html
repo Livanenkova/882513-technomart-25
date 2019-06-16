@@ -39,7 +39,7 @@
                         </p>
                     </div>
                     <div class="main-header-center main-header-center-catalog">
-                        <p class="tel-number tel-number-catalog">+7 (812) 555-05-55</p>
+                        <p class="phone-number phone-number-catalog">+7 (812) 555-05-55</p>
                         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </div>
                     <div class="main-header-right">
@@ -202,7 +202,9 @@
                     <ul class="catalog-list">
                         <li class="catalog-item">
                             <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                            <p class="title">Перфоратор BOSCH BFG 3000</p>
+                            <p class="title">
+                              <a href="#">Перфоратор BOSCH BFG 3000</a>
+                              </p>
                             <p class="sale">22500 Р.</p>
                             <p class="actual-price">15500 Р.</p>
                             <div class="chosen-product">
@@ -232,7 +234,9 @@
                         </li>
                         <li class="catalog-item">
                             <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                            <p class="title">Перфоратор BOSCH BFG 3000</p>
+                            <p class="title">
+                            <a href="#">Перфоратор BOSCH BFG 3000</a>
+                          </p>
                             <p class="sale">22500 Р.</p>
                             <p class="actual-price">15500 Р.</p>
                             <div class="chosen-product">
@@ -262,7 +266,9 @@
                         </li>
                         <li class="catalog-item flag-new">
                             <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                            <p class="title">Перфоратор BOSCH BFG 3000</p>
+                            <p class="title">
+                              <a href="#">Перфоратор BOSCH BFG 3000</a>
+                              </p>
                             <p class="sale">22500 Р.</p>
                             <p class="actual-price">15500 Р.</p>
                             <div class="chosen-product">
@@ -291,6 +297,14 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="pagination">
+                        <ul class="pagination-list">
+                            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                            <li class="pagination-item"><a href="#">2</a></li>
+                            <li class="pagination-item"><a href="#">3</a></li>
+                            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </div>
@@ -386,18 +400,22 @@
   </footer>
 
 
-  <section class="modal-basket">
-    <button class="close-basket">
-    </button>
-    <div class="modal-container">
-      <h2> Товар добавлен в корзину!</h2>
-    </div>
-    <div class="modal-container">
-      <a href="#"> Оформить заказ</a>
-      <button>
-        Продолжить покупки
+    <section class="modal modal-cart">
+      <button class="close-cart">
+        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
       </button>
-    </div>
-  </section>
+      <div class="modal-container">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="modal-cart-bottom">
+        <div class="modal-container">
+          <div class="modal-cart-buttons">
+            <a class="button checkout-button" href="#">Оформить заказ
+            </a>
+            <a class="button shopping-button" href="#">Продолжить покупки</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
