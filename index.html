@@ -34,8 +34,8 @@
                     <div class="main-header-left">
                         <p class="main-title">
                             Интернет-магазин
-                            строительных материалов<br>
-                            и инструментов для ремонта
+                            строительных материалов
+                            и&nbsp;инструментов для ремонта
                         </p>
                     </div>
                     <div class="main-header-center">
@@ -56,6 +56,7 @@
           </div>
               <nav class="main-navigation container">
                   <ul class="site-navigation">
+                    <li class="site-navigation-item"><a href="index.html">Главная</a></li>
                     <li class="site-navigation-item"><a href="#">Компания</a></li>
                     <li class="site-navigation-item"><a href="inner.html">Каталог</a></li>
                     <li class="site-navigation-item"><a href="#">Новости</a></li>
@@ -271,7 +272,7 @@
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
               <br>
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+              Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!
               </p>
             </div>
             </div>
@@ -318,7 +319,7 @@
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:
+            Мы можем доставить ваш товар в самые отдаленные точки России!&nbsp;Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="delivery-company">
             <li>Деловые линии</li>
@@ -335,7 +336,7 @@
             <a href="#"><img src="img/map.png"
               width="300" height="158" alt="Расположение магазина «Техномарт» на карте"></a>
           </div>
-            <a href="#" class="button">Заблудились? Напишите нам</a>
+            <a href="#" class="button button-feedback">Заблудились? Напишите нам</a>
         </div>
         </section>
       </div>
@@ -357,6 +358,7 @@
                 </div>
                 <div class="main-footer-right">
                     <ul class="site-sections">
+
                         <li><a href=#>Компания</a></li>
                         <li><a href=#>Новости</a></li>
                         <li><a href="inner.html">Каталог</a></li>
@@ -376,7 +378,7 @@
             <div class="bottom-footer container">
                 <div class="bottom-footer-left">
                     <p>
-                        © 2010–2017 Компания «Техномарт»<br>
+                        © 2010–2017 Компания «Техномарт»
                         Все права защищены
                     </p>
                 </div>
@@ -435,17 +437,18 @@
         </div>
     </footer>
 
-  <section class="modal-feedback">
-    <button class="close-feedback">
+  <section class=" modal modal-feedback">
+    <button class="close-feedback" aria-label="Кнопка закрытия окна">
       <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
     </button>
-    <h2 class="visually-hidden">Обратная связь</h2>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
     <div class="modal-container">
     <form action="#" method="get" class="feedback">
       <div class="user-info">
-        <label class="feedback-user-name">
+        <label class="feedback-user-name" for="username">
           <span>Ваше имя:</span>
-          <input type="text" name="name" placeholder="Имя Фамилия">
+          <input type="text" name="name" id="username"
+           placeholder="Имя Фамилия">
         </label>
         <label class="feedback-user-email">
           <span>Ваш e-mail:</span>
@@ -458,8 +461,8 @@
           </label>
         </div>
         <div class="feedback-button">
-          <button class="
-          " type="submit">
+          <button class="submit-button
+          " type="submit" aria-label="Кнопка отправить форму">
           Отправить
           </button>
         </div>
@@ -473,5 +476,6 @@
   </button>
   <img src="img/map-full.png" width="940" height="446" alt="Офис компании по адресу улица Большая Конюшенная дом 19/8, Санкт-Петербург">
   </section>
+
   </body>
 </html>

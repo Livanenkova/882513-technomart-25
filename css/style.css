@@ -68,6 +68,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 250px;
   height: 42px;
+  margin-right: auto;
 }
 
 .search-area-label {
@@ -218,7 +219,6 @@ input[type="radio"].visually-hidden {
   font-style: italic;
   line-height: 23px;
   text-align: left;
-  color: black;
 }
 
 .main-header-center {
@@ -1013,7 +1013,7 @@ input[type="radio"].visually-hidden {
 
 .promo-item::after {
   display: none;
-  content: url("../img/flag-new.png");
+  content: url("../img/flag new.png");
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1224,10 +1224,10 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-.popular {
+/*.popular {
   margin-bottom: 62px;
 }
-
+*/
 .headline-layout {
   display: flex;
   justify-content: space-between;
@@ -1300,7 +1300,7 @@ input[type="radio"].visually-hidden {
 
 .headline-layout-brands h2 {
   margin: 0;
-  margin-left: -6px;
+  margin-left: -3px;
   padding: 0;
 }
 
@@ -1543,54 +1543,6 @@ input[type="radio"].visually-hidden {
   width: 23px;
   height: 0;
   border: 1px solid #ee3643;
-
-}
-
-.headline-layout {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 25px;
-  padding-bottom: 26px;
-  padding-left: 30px;
-  background-color: #f9f5f0;
-  box-sizing: border-box;
-}
-
-.headline-layout-brands h2 {
-  margin: 0;
-  margin-left: -6px;
-  padding: 0;
-}
-
-.headline-layout-brands a {
-  margin-top: -5px;
-  padding-left: 68px;
-  padding-top: 11px;
-  padding-bottom: 9px;
-  padding-right: 68px;
-}
-
-.headline-layout a {
-  margin-top: -5px;
-  padding-left: 55px;
-  padding-top: 11px;
-  padding-bottom: 9px;
-  padding-right: 54px;
-  color: #ffffff;
-  background-color: #ee3643;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase
-  border-radius: 3px;
-}
-.headline-layout-brands a:hover {
-  background-color: #ca2c37;
-}
-
-.headline-layout-brands a:active {
-  background-color: #ba2732;
 }
 
 .brand-list {
@@ -1864,7 +1816,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin-bottom: 97px;
-  margin-top: 86px;
+  margin-top: 76px;
 }
 
 .about-shop {
@@ -2178,7 +2130,7 @@ input[type="radio"].visually-hidden {
 .main-footer-layout {
   width: 100%;
   background-color: #32425c;
-  padding-bottom:40px;
+  padding-bottom:32px;
 }
 
 .main-footer {
@@ -2276,6 +2228,7 @@ input[type="radio"].visually-hidden {
 
 .bottom-footer-left {
   margin-right: 40px;
+  width: 230px;
 }
 
 .bottom-footer-left p {
