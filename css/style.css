@@ -32,13 +32,13 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 5px 0 0 #b52933;
 }
 
-.inner-page-logo:hover {
+.header-logo:hover {
   background-color: #ca2c37;
   box-shadow: 0 5px 0 0 #9a212a;
 
 }
 
-.inner-page-logo:active {
+.header-logo:active {
   background-color: #ba2732;
   box-shadow: 0 5px 0 0 #8e1e26;
 }
@@ -360,6 +360,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
   align-items: center;
   list-style: none;
@@ -1802,9 +1803,15 @@ input[type="radio"].visually-hidden {
   padding-left: 31px;
 }
 
+.pagination-item a:hover{
+  border-color: #bdc6ca;
+}
+
 .pagination-item a:active {
   border-color: #ee3643;
 }
+
+
 
 .pagination-item-current a {
   color: #ffffff;
@@ -2168,6 +2175,7 @@ input[type="radio"].visually-hidden {
 
 .site-sections {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 550px;
   margin: 0;
