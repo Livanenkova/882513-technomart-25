@@ -194,6 +194,7 @@ input[type="radio"].visually-hidden {
 .main-header-layout {
   padding-bottom: 64px;
   background-color: #f4f7f9;
+  min-width: 940px;
 }
 
 .main-header {
@@ -1156,12 +1157,14 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 114px;
   left: 26px;
+  z-index: 2;
 }
 
 .gallery-scroll-right {
   position: absolute;
   top: 114px;
   right: 20px;
+  z-index: 2;
 }
 
 .promo-slider {
@@ -1172,11 +1175,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-dot-left {
-  position: relative;
+  position: absolute;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #ffffff;
+  z-index: 2;
+  top: 82%;
+  left:47%;
 }
 
 .slider-dot-left::after {
@@ -1193,12 +1199,15 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-dot-right {
-  position: relative;
+  position: absolute;
   margin-left: 10px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #ffffff;
+  z-index: 2;
+  top: 82%;
+  right: 47%;
 }
 
 .slider-dot-right::after {
@@ -1212,12 +1221,21 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
+.{
+  display:none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .main-promo-item-slide2 {
   display:none;
   position: absolute;
   top: 0px;
   left: 0px;
 }
+
+
 
 .main-promo-item-slide2 p {
   font-family: "PT Sans", Arial, sans-serif;
@@ -2138,6 +2156,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   background-color: #32425c;
   padding-bottom:32px;
+  min-width: 940px;
 }
 
 .main-footer {
