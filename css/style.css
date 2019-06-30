@@ -2520,13 +2520,23 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 0 1px #ee3643;
 }
 
-.modal-show {
-  display: block;
-}
+
 .modal-map {
   display: none;
+  position: fixed;
+  top: 40%;
+  left: 20%;
 }
 
+.close-map {
+  position: absolute;
+  top: 16px;
+  right: 9px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
 
 .modal-feedback{
   display: none;
@@ -2534,4 +2544,8 @@ input[type="radio"].visually-hidden {
 
 .modal-cart{
   display: none;
+}
+
+.modal-show {
+  display: block;
 }

@@ -1,30 +1,56 @@
 var link = document.querySelector(".button-map");
 
-      var popup = document.querySelector(".modal-feedback");
+var linkModal = document.querySelector(".button-feedback");
 
-      var close = popup.querySelector(".close-feedback");
+var linkBuy = document.querySelectorAll(".buy-button");
 
-      var form = popup.querySelector("form");
+var popup = document.querySelector(".modal-feedback");
 
-      var name = popup.querySelector("[feedback-user-name=name]");
+var close = popup.querySelector(".close-feedback");
 
-      var email = popup.querySelector("[feedback-user-email=email]");
+var form = popup.querySelector("form");
 
+var map = document.querySelector(".modal-map");
 
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        name.focus();
-  });
-       close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    });
-       form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-  });
+var map_btn = document.querySelector(".map");
 
-       if (!login.value || !password.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести e-mail ");
-    }
+var close_map = map.querySelector(".close-map");
+
+var cart = document.querySelector(".modal-cart");
+
+var cart_btn = document.querySelector(".buy-button");
+
+var close_cart = cart.querySelector(".close-cart");
+
+linkModal.addEventListener("click", function (evt) {
+ evt.preventDefault();
+ popup.classList.add("modal-show");
+ name.focus();
+});
+
+close.addEventListener("click", function (evt) {
+evt.preventDefault();
+popup.classList.remove("modal-show");
+});
+form.addEventListener("submit", function (evt) {
+evt.preventDefault();
+});
+map_btn.addEventListener("click", function (evt) {
+evt.preventDefault();
+map.classList.add("modal-show");
+});
+
+close_map.addEventListener("click", function (evt) {
+evt.preventDefault();
+map.classList.remove("modal-show");
+});
+
+linkBuy.addEventListener("click", function (evt) {
+evt.preventDefault();
+cart.classList.add("modal-show");
+});
+
+close_cart.addEventListener("click", function (evt) {
+evt.preventDefault();
+cart.classList.remove("modal-show");
+});

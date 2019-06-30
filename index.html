@@ -7,7 +7,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.cnavss">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
     <header>
@@ -140,13 +140,13 @@
 
                     <div class="promo-container">
                       <div class="main-promo-item">
-                        <button class="gallery-scroll gallery-scroll-left">
+                        <button class="gallery-scroll gallery-scroll-left" aria-label="Кнопка для перелистывания слайдера налево">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
                                  <polygon fill="#FFFFFF" points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 "/>
                             </svg>
                         </button>
-                        <button class="gallery-scroll gallery-scroll-right">
+                        <button class="gallery-scroll gallery-scroll-right" aria-label="Кнопка для перелистывания слайдера направо">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px"
                            height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
                                 <g></g>
@@ -155,16 +155,16 @@
                                 </g>
                             </svg>
                         </button>
-                        <input type="radio" class="slider-dot-left" id="perforator">
-                        <input type="radio" class="slider-dot-right" id="drel" checked>
+                        <input type="radio" class="slider-dot-left" id="perforator" name="toggle">
+                        <input type="radio" class="slider-dot-right" id="drel" name="toggle" checked>
                         <div class="main-promo-item main-promo-item-slide-2 ">
                         <img class="main-promo-slide-2" src="img/slider.jpg" width="620" height="266" alt="Дрели">
                           <h3 class="main-promo-headline">Дрели</h3>
                         <p class="main-promo-text">Соседям на радость!</p>
-                        <a class="promo-link main-promo-link" href="catalog.html">Открыть каталог</a>
+                        <a class="promo-link main-promo-link" href="inner.html">Открыть каталог</a>
                            </div>
                          <div class="main-promo-item main-promo-item-slide2">
-                          <img class="main-promo-slide-1" src="img/slider.jpg" width="620" height="266" alt="Дрели">
+                          <img class="main-promo-slide-1" src="img/slider.jpg" width="620" height="266" alt="Перфораторы">
                           <h3 class="main-promo-headline">Перфораторы</h3>
                         <p class="main-promo-text">Настоящие мужские игрушки</p>
                            </div>
@@ -341,7 +341,7 @@
                       <p>Залезть в долговую яму стало проще!<br>
                       Кредитные консультанты придут вам на помощь.
                       </p>
-                      <button class="credit-button" type="button">Отправить заявку
+                      <button class="credit-button" type="button" aria-label="Кнопка отправки заявки на кредит">Отправить заявку
                       </button>
                     </div>
                   </div>
@@ -370,10 +370,10 @@
           <p>Вы можете забрать товар сами, заехав в наш офис
           </p>
           <div class="map">
-            <a href="#"><img src="img/map.png"
+            <a href="map.html"><img src="img/map.png"
               width="300" height="158" alt="Расположение магазина «Техномарт» на карте"></a>
           </div>
-            <a href="#" class="button button-feedback">Заблудились? Напишите нам</a>
+            <a href="form.html" class="button button-feedback">Заблудились? Напишите нам</a>
         </div>
         </section>
       </div>
@@ -509,10 +509,13 @@
   </section>
 
   <section class="modal-map">
-  <button class="close-map" aria-label="Закрыть">
+  <button class="close-map" aria-label="Кнопка закрытия окна">
+    <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
   </button>
   <img src="img/map-full.png" width="940" height="446" alt="Офис компании по адресу улица Большая Конюшенная дом 19/8, Санкт-Петербург">
   </section>
+ <script src="js/script.js">
 
+ </script>
   </body>
 </html>
