@@ -5348,7 +5348,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
- @keyframes bounce{
+@keyframes bounce{
 
  0%{
  transform: translateX(2000px);
