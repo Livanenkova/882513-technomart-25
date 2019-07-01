@@ -1,6 +1,6 @@
 var linkBuy = document.querySelectorAll(".buy-button");
 
-      var cart = document.querySelector(".modal-cart");
+ var cart = document.querySelector(".modal-cart");
 
 var cart_btn = document.querySelectorAll(".buy-button");
 
