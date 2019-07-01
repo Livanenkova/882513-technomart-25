@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
@@ -85,58 +85,6 @@
                     <h3>Техника</h3>
                     <a class="promo-link" href="#">Для стройки</a>
                 </div>
-<!--                 <div class="promo-container">
-                    <div class="main-promo-item">
-                        <img class="main-promo-slide-1" src="img/slider.jpg" width="620" height="266" alt="Дрели">
-                        <button class="gallery-scroll gallery-scroll-left">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                               width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
-                                 <polygon fill="#FFFFFF" points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 "/>
-                            </svg>
-                        </button>
-                        <button class="gallery-scroll gallery-scroll-right">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px"
-                           height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
-                                <g></g>
-                                <g>
-                                     <polygon fill="#FFFFFF" points="2.098,-0.035 0.009,2.064 17.798,19.947 -0.048,37.886 2.041,39.985 21.976,19.947  "/>
-                                </g>
-                            </svg>
-                        </button>
-                        <div class="promo-slider">
-                            <input  type="radio" id="perforetor"></input>
-                            <input type="radio" id="drel"></input>
-                        </div>
-                        <h3 class="main-promo-headline">Дрели</h3>
-                        <p class="main-promo-text">Соседям на радость!</p>
-                        <a class="promo-link main-promo-link" href="catalog.html">Открыть каталог</a>
-                    </div>
-                    <div class="main-promo-item main-promo-item-slide2">
-                        <img class="main-promo-slide-2" src="img/slider-2.jpg" width="620" height="266" alt="Дрели">
-                        <button class="gallery-scroll gallery-scroll-left">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                               width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
-                                 <polygon fill="#FFFFFF" points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 "/>
-                            </svg>
-                        </button>
-                        <button class="gallery-scroll gallery-scroll-right">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px"
-                           height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
-                                <g></g>
-                                <g>
-                                     <polygon fill="#FFFFFF" points="2.098,-0.035 0.009,2.064 17.798,19.947 -0.048,37.886 2.041,39.985 21.976,19.947  "/>
-                                </g>
-                            </svg>
-                        </button>
-                        <div class="promo-slider">
-                             <div class="slider-dot-left"></div>
-                            <div class="slider-dot-right"></div>
-                        </div>
-                        <h3 class="main-promo-headline">Перфораторы</h3>
-                        <p class="main-promo-text">Настоящие мужские игрушки</p>
-                        <a class="promo-link main-promo-link" href="catalog.html">Открыть каталог</a>
-                    </div> -->
-
 
                     <div class="promo-container">
                       <div class="main-promo-item">
@@ -287,24 +235,22 @@
                   </div>
                 </div>
 
-      <!-- about!!!!!!!! -->
-
       <section class="services">
         <div class="container">
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
           <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <div class="service-menu">
 
+          <div class="service-menu">
           <div class="delivery-section">
-            <ul class="service-menu-catalog">
+            <div class="service-menu-catalog">
               <li class="service-menu-item delivery-item service-menu-current-item">Доставка
               </li>
               <li class="service-menu-item warranty-item">Гарантия
               </li>
               <li class="service-menu-item credit-item">Кредит
               </li>
-            </ul>
+            </div>
             <div class="menu-item-description delivery-preview">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -316,12 +262,12 @@
             </div>
           <div class="warranty-section">
                     <ul class="service-menu-catalog">
-                      <li class="service-menu-item delivery-item">Доставка
-                      </li>
-                      <li class="service-menu-item warranty-item service-menu-current-item">Гарантия
-                      </li>
-                      <li class="service-menu-item credit-item">Кредит
-                      </li>
+                      <input type="radio" name="selector" class="service-menu-item delivery-item">Доставка
+                      </input>
+                      <input type="radio" name="selector" class="service-menu-item warranty-item service-menu-current-item">Гарантия
+                      </input>
+                      <input type="radio" name="selector" class="service-menu-item credit-item">Кредит
+                      </input>
                     </ul>
                     <div class="menu-item-description warranty-preview">
                       <h3>Гарантия</h3>
@@ -331,11 +277,11 @@
                   </div>
 
                   <div class="credit-section">
-                    <ul class="service-menu-catalog">
-                      <li class="service-menu-item delivery-item">Доставка</li>
-                      <li class="service-menu-item warranty-item">Гарантия</li>
-                      <li class="service-menu-item credit-item service-menu-current-item">Кредит</li>
-                    </ul>
+                    <div class="service-menu-catalog">
+                      <input class="service-menu-item delivery-item">Доставка</input>
+                      <input class="service-menu-item warranty-item">Гарантия</input>
+                      <input class="service-menu-item credit-item service-menu-current-item">Кредит</input>
+                    </div>
                     <div class="menu-item-description credit-preview">
                       <h3>Кредит</h3>
                       <p>Залезть в долговую яму стало проще!<br>
@@ -347,6 +293,7 @@
                   </div>
         </div>
       </section>
+
       <div class="container">
         <section class="about">
         <div class="about-shop">
@@ -356,7 +303,7 @@
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!&nbsp;Техномарт работает со многими транспортными компаниями:
+            Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="delivery-company">
             <li>Деловые линии</li>
@@ -449,7 +396,8 @@
                         <li class="social-button">
                             <a class="social-ig" aria-label="Техномарт в Инстаграм" href="#">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                   width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+                                   width="21px" height="21px"
+                                   viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
                                      <path fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
                                   c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
                                   c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/>

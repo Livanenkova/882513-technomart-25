@@ -16,11 +16,7 @@ var map_btn = document.querySelector(".map");
 
 var close_map = map.querySelector(".close-map");
 
-var cart = document.querySelector(".modal-cart");
 
-var cart_btn = document.querySelector(".buy-button");
-
-var close_cart = cart.querySelector(".close-cart");
 
 linkModal.addEventListener("click", function (evt) {
  evt.preventDefault();
@@ -43,14 +39,4 @@ map.classList.add("modal-show");
 close_map.addEventListener("click", function (evt) {
 evt.preventDefault();
 map.classList.remove("modal-show");
-});
-
-linkBuy.addEventListener("click", function (evt) {
-evt.preventDefault();
-cart.classList.add("modal-show");
-});
-
-close_cart.addEventListener("click", function (evt) {
-evt.preventDefault();
-cart.classList.remove("modal-show");
 });
