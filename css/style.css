@@ -2133,6 +2133,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #f1f5f7;
+  width: 340px;
 }
 
 .footer-logo {
